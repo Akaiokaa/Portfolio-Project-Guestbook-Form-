@@ -52,15 +52,24 @@ legend{
     gap: 0.50rem;
     
 }
+@media (max-width: 1100px) {
+  .first-section-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+
 .first-section-container div{
     padding-bottom: 10px;
 }
 form{
     height: 490px;
     background-color: white;
-    margin: 0 28%;
+    margin: 0 30%;
     border-radius: 5px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); 
+    height: auto;
+    padding-bottom: 1rem;
 }
 /* second-section */
 .second-section{
