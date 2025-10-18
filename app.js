@@ -7,7 +7,7 @@ app.use(express.static('public'));
 
 const PORT = 3003;
 
-app.get("/", (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(`${import.meta.dirname}/views/home.html`);
 });
 
