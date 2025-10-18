@@ -47,10 +47,10 @@ legend{
     margin: 0 auto;
     width: 95%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
     grid-template-rows: 1fr 1fr;
     gap: 0.50rem;
-    flex-wrap: wrap;
+    
 }
 .first-section-container div{
     padding-bottom: 10px;
@@ -58,7 +58,7 @@ legend{
 form{
     height: 490px;
     background-color: white;
-    margin: 0 30%;
+    margin: 0 28%;
     border-radius: 5px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); 
 }
