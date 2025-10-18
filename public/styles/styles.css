@@ -1,0 +1,99 @@
+* {
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    color: rgb(70, 70, 70);
+}
+p {
+    margin: 0;
+}
+body{
+    background-color: rgb(221, 224, 224);
+    
+}
+h1{
+    padding: 10px;
+    margin: 0 auto;
+}
+label{
+    font-weight: bold;
+}
+
+input[type="radio"] {
+  accent-color: grey;
+}
+
+.first-section-container input{
+    padding-right: 58px;
+}
+.spacing-middle{
+    display: flex;
+    justify-content: space-between;
+}
+/* first-section */
+#other{
+    padding-right: 10rem;
+}
+select{
+    text-decoration: none;
+    border-color: rgb(0, 0, 0);
+    box-shadow: none;
+    background-color: white;
+    border-radius: 3px;
+    padding-right: 13rem;
+}
+legend{
+    text-align: center;
+}
+.first-section-container{
+    margin: 0 auto;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.50rem;
+}
+.first-section-container div{
+    padding-bottom: 10px;
+}
+form{
+    height: 490px;
+    background-color: white;
+    margin: 0 30%;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); 
+}
+/* second-section */
+.second-section{
+    padding-top: 1rem;
+    margin: 0 auto;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+button{
+    border: none;
+    color: white;
+    background-color: rgb(6, 179, 6);
+    padding: 5px 13px;
+    border-radius: 3px;
+}
+/* middle */
+.middle{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+#message{
+    height: 100px;
+}
+/* bottom */
+#added{
+    margin-right: 5px;
+}
+.listing{
+    margin-top: 1rem;
+    display: flex;
+}
+.bottom{
+    padding: 10px 0;
+    display: flex;
+}
