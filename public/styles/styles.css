@@ -50,6 +50,7 @@ legend{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 0.50rem;
+    flex-wrap: wrap;
 }
 .first-section-container div{
     padding-bottom: 10px;
