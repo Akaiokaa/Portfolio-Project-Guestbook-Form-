@@ -127,3 +127,12 @@ button{
     padding: 10px 0;
     display: flex;
 }
+
+/* Js section */
+.second-section-right, .listing, .bottom{
+    display: none;
+}
+.error{
+    color: red;
+    display: none;
+}

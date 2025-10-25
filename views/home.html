@@ -8,94 +8,100 @@
     <link rel="icon" href="images/favicon.png">
 </head>
 <body>
-<form action="">
-    <legend><h1>Contact Form</h1></legend>
-    <div class="first-section-container">
-        <div>
-            <label for="fname">First Name</label>
-            <input type="text" id="fname">
-        </div>
-        
-        
-        <div>
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname">
-        </div>
-        
-        <div>
-            <label for="jobT">Job Title</label>
-            <input type="text" id="jobT">
-        </div>
-
-        
-        <div>
-            <label for="Company">Company</label>
-            <input type="text" id="Company">
-        </div>
-        
-
-        <div>
-            <label for="linkedin">Linkedin URL</label>
-            <input type="text" id="linkedin">
-        </div>
-        
-        <div>
-            <label for="email">Email Address</label>
-            <input type="text" id="email">
-        </div>
-        
-    </div>
-    <div class="second-section">
-        <div class="spacing-middle">
+    <form id="guest-form">
+        <legend><h1>Contact Form</h1></legend>
+        <div class="first-section-container">
             <div>
-                <label for="met">How did we meet?</label>
-                <br>
-                <select name="met" id="met">
-                <option value="select"> Please select</option>
-                <option value="high-school">high-school</option>
-                <option value="work">work</option>
-                <option value="Online">online</option>
-                </select>
-          
+                <label for="fname">First Name</label>
+                <input type="text" id="fname">
+                <span id="err-fname" class="error">First name cannot be empty!</span>
+            </div>
+            
+            
+            <div>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname">
+                <span id="err-fname" class="error">Lirst name cannot be empty!</span>
+            </div>
+            
+            <div>
+                <label for="jobT">Job Title</label>
+                <input type="text" id="jobT">
+            </div>
+
+            
+            <div>
+                <label for="Company">Company</label>
+                <input type="text" id="Company">
+            </div>
+            
+
+            <div>
+                <label for="linkedin">Linkedin URL</label>
+                <input type="text" id="linkedin">
+                <span id="err-linkedin" class="error">linkedin must contain https://linkedin.com/in/</span>
+            </div>
+            
+            <div>
+                <label for="email">Email Address</label>
+                <input type="text" id="email">
+                <span id="err-fname" class="error">First name cannot be empty!</span>
+            </div>
+            
+        </div>
+        <div class="second-section">
+            <div class="spacing-middle">
+                <div>
+                    <label for="met">How did we meet?</label>
+                    <br>
+                    <select name="met" id="met">
+                    <option value="select"> Please select</option>
+                    <option value="high-school">high-school</option>
+                    <option value="work">work</option>
+                    <option value="Online">online</option>
+                    <option value="Other">Other</option>
+                    </select>
+            
+                    
+                </div>
+                
+                <div class="second-section-right">
+                    <label for="other" id="other">Other (please specify)</label>
+                    <input type="text" id="other">
+                </div>
                 
             </div>
+            <div class ="middle">
+                <label for="Message">Message</label>
+                <textarea name="message" id="message"></textarea>
             
-            <div class="second-section-right">
-                <label for="other" id="other">Other (please specify)</label>
-                <input type="text" id="other">
             </div>
-            
-        </div>
-        <div class ="middle">
-            <label for="Message">Message</label>
-            <textarea name="message" id="message"></textarea>
-           
-        </div>
 
-        <div class="listing">
-            <label for="add">
-                <input type="checkbox" name="added" id="added">
-            </label>
-            <p><b>Please add me to your mailing list</b></p>
-        </div>
+            <div class="listing">
+                <label for="add">
+                    <input type="checkbox" name="added" id="added">
+                </label>
+                <p><b>Please add me to your mailing list</b></p>
+            </div>
 
-        <div class="bottom">
-             <p><b>Choose and email format:</b></p>
-            <label for="choice">
-                <input type="radio" name="choiceFormat" value="html">
-                Html
-            </label>
-            <label for="choice">
-                <input type="radio" name="choiceFormat"value="text">
-                Text
-            </label>
+            <div class="bottom">
+                <p><b>Choose and email format:</b></p>
+                <label for="choice">
+                    <input type="radio" name="choiceFormat" value="html">
+                    Html
+                </label>
+                <label for="choice">
+                    <input type="radio" name="choiceFormat"value="text">
+                    Text
+                </label>
+            </div>
+        
+            <div class="block">
+                <button>Submit</button>
+            </div>
+    
         </div>
-       
-        <div class="block">
-            <button>Submit</button>
-        </div>
-  
-    </div>
-</form>
+    </form>
+    <script src="js/guest.js"></script>
 </body>
 </html>
