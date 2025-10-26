@@ -25,7 +25,7 @@ document.getElementById('guest-form').onsubmit = () => {
     }
 
     let email = document.getElementById('email').value.trim();
-    if (email.indexOf("@") === -1 && email) {
+    if (email.indexOf("@") === -1 || email.indexOf(".") === -1 && email) {
         document.getElementById("err-email").style.display = "block";
         isValid = false;
     }
