@@ -112,7 +112,7 @@ button{
 #message{
     height: 100px;
 }
-.second-section-right{
+#second-section-right{
     padding-right: 8px;
 }
 /* bottom */
@@ -129,7 +129,7 @@ button{
 }
 
 /* Js section */
-.second-section-right, .listing, .bottom{
+#second-section-right, #bottom{
     display: none;
 }
 .error{
