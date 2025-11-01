@@ -25,10 +25,13 @@ document.getElementById('guest-form').onsubmit = () => {
     }
 
     let email = document.getElementById('email').value.trim();
-    if (email.indexOf("@") === -1 || email.indexOf(".") === -1 && email) {
-        document.getElementById("err-email").style.display = "block";
-        isValid = false;
+    if (email !== "") {
+        if (email.indexOf("@") === -1 || email.indexOf(".") === -1) {
+            document.getElementById("err-email").style.display = "block";
+            isValid = false;
+        }
     }
+
     let linkedin = document.getElementById('linkedin').value.trim();
     if (!linkedin.includes("https://linkedin.com/in/")  && linkedin) {
         document.getElementById("err-linkedin").style.display = "block";
