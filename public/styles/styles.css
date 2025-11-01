@@ -67,7 +67,7 @@ legend{
 }
 @media (max-width: 1100px) {
   .first-section-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
   }
 }
