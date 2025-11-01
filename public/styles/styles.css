@@ -17,6 +17,9 @@ body{
     background-color: rgb(221, 224, 224);
     
 }
+#back-home {
+    text-align: center;
+}
 h1{
     padding: 10px;
     margin: 0 auto;

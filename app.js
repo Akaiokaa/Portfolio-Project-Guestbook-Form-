@@ -11,6 +11,10 @@ app.get('/', (req, res) => {
     res.sendFile(`${import.meta.dirname}/views/home.html`);
 });
 
+app.post('/submit-form', (req,res) => {
+    res.sendFile(`${import.meta.dirname}/views/confirmation.html`);
+});
+
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`)
 });
