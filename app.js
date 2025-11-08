@@ -20,7 +20,9 @@ app.get('/admin', (req, res) =>{
 });
 
 app.post('/submit-form', (req, res) => {
+    let date = new Date();
     const submission = req.body;
+    submission.submissionTime = date.toLocaleString();
     submissions.push(submission);
     console.log(submissions);
     
