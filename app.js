@@ -2,7 +2,7 @@ import express from 'express';
 
 const app = express();
 
-
+app.set('view engine', 'ejs')
 app.use(express.static('public'));
 
 app.use(express.urlencoded({ extended: true }));
@@ -12,7 +12,8 @@ const PORT = 3004;
 const submissions = [];
 
 app.get('/', (req, res) => {
-    res.sendFile(`${import.meta.dirname}/views/home.html`);
+    // res.sendFile(`${import.meta.dirname}/views/home.html`);
+    res.render('home');
 });
 
 app.get('/admin', (req, res) =>{
@@ -26,7 +27,7 @@ app.post('/submit-form', (req, res) => {
     submissions.push(submission);
     console.log(submissions);
     
-    res.sendFile(`${import.meta.dirname}/views/confirmation.html`);
+    res.render('confirmation')
 });
 
 app.listen(PORT, () => {
