@@ -10,11 +10,24 @@ select {
   width: 100%;
   box-sizing: border-box;
 }
-p {
+p, body {
     margin: 0;
 }
+/* nav */
+nav{
+    background-color: antiquewhite;
+    width: 100%;
+}
+nav ul{
+    margin: 0;
+    justify-content: space-between;
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+}
 body{
-    background-color: rgb(221, 224, 224);
+    background-color: rgb(230, 228, 228);
     
 }
 #back-home {
@@ -157,10 +170,10 @@ button{
     grid-template-columns: repeat(3, auto);
     gap: 10px;
 }
-h4 {
+.info-highlighted {
     margin: 0;
     padding-left: 10px;
-    background-color:  rgb(230, 228, 228);
+    background-color: rgb(230, 228, 228);
 }
 .grid-container {
     grid-template-columns: 1fr;

@@ -8,6 +8,7 @@
     <link rel="icon" href="images/favicon.png">
 </head>
 <body>
+    <%- include('partials/navbar') %>
     <form id="guest-form" action="submit-form" method="POST">
     <legend><h1>Admin</h1></legend>
     <div class="container">
@@ -18,56 +19,56 @@
             <div class="grid-container">
                 <div class="submission-field">
                     <h3>First Name</h3>
-                    <h4><%= submission.fname %></h4>
+                    <h4 class="info-highlighted"><%= submission.fname %></h4>
                 </div>
                 <div class="submission-field">
                     <h3>Last Name:</h3>
-                    <h4><%= submission.lname %> </h4>
+                    <h4 class="info-highlighted"><%= submission.lname %> </h4>
                 </div>
 
                 <div class="submission-field">
                     <h3>Job Title:</h3>
-                    <h4><%= submission.jobT %></h4>
+                    <h4 class="info-highlighted"><%= submission.jobT %></h4>
                 </div>
 
                 <div class="submission-field">
                     <h3>Company:</h3>
-                    <h4><%= submission.company %></h4>
+                    <h4 class="info-highlighted"><%= submission.company %></h4>
                 </div>
 
                 <div class="submission-field">
                     <h3>Linkedin URL:</h3>
-                    <h4><%= submission.linkedin %></h4>
+                    <h4 class="info-highlighted"><%= submission.linkedin %></h4>
                 </div>
 
                 <div class="submission-field">
                     <h3>Email Address:</h3>
-                    <h4><%= submission.email %></h4>
+                    <h4 class="info-highlighted"><%= submission.email %></h4>
                 </div>
 
                 <div class="submission-field">
                     <h3>How We Met:</h3>
-                    <h4><%= submission.met %></h4>
+                    <h4 class="info-highlighted"><%= submission.met %></h4>
                 </div>
 
                 <div class="submission-field">
                     <h3>Message:</h3>
-                    <h4><%= submission.message %></h4>
+                    <h4 class="info-highlighted"><%= submission.message %></h4>
                 </div>
 
                 <div class="submission-field">
                     <h3>Added to Mailing List?:</h3>
-                    <h4><%= submission.added || 'No' %></h4>
+                    <h4 class="info-highlighted"><%= submission.added || 'No' %></h4>
                 </div>
 
                 <div class="submission-field">
                     <h3>Email Format Choice:</h3>
-                    <h4><%= submission.choiceFormat %></h4>
+                    <h4 class="info-highlighted"><%= submission.choiceFormat %></h4>
                 </div>
 
                 <div class="submission-field">
                     <h3>Submission Time:</h3>
-                    <h4><%= submission.submissionTime %></h4>
+                    <h4 class="info-highlighted"><%= submission.submissionTime %></h4>
                 </div>
             </div>
             <br>

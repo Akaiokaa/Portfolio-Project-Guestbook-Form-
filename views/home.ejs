@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <header>
+    <%- include('partials/navbar') %>
+    <div class="home-section">
+        <header>
         <section>
             <div class="marginBothsides">
                 <div class="sectionSpacing">
@@ -124,6 +127,6 @@
             </div>
         </div>
     </main>
-    
+    </div>
 </body>
 </html>
