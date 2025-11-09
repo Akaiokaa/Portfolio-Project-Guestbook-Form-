@@ -15,17 +15,20 @@ p, body {
 }
 /* nav */
 nav{
-    background-color: antiquewhite;
+    padding: 10px;
+    background-color: silver;
     width: 100%;
 }
 nav ul{
     margin: 0;
-    justify-content: space-between;
+    justify-content: space-around;
     display: flex;
 }
-nav ul li{
+nav ul li, nav ul li a{
     list-style: none;
+    text-decoration: none;
 }
+/* nav */
 body{
     background-color: rgb(230, 228, 228);
     
