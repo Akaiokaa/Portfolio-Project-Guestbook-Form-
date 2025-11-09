@@ -150,7 +150,7 @@ button{
     justify-content: space-between;
     flex-direction: column;
 }
-.flex-container{
+.grid-container{
     width: auto;
     display: grid;
     grid-template-columns: repeat(3, auto);
