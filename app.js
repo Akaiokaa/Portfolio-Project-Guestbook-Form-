@@ -30,7 +30,7 @@ app.post('/submit-form', (req, res) => {
     submissions.push(submission);
     console.log(submissions);
     
-    res.render('confirmation')
+    res.render('confirmation', {submissions})
 });
 
 app.listen(PORT, () => {

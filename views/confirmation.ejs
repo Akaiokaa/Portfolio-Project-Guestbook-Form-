@@ -10,7 +10,48 @@
 <body>
     <%- include('partials/navbar') %>
     <form id="guest-form" action="submit-form" method="POST">
-        <legend><h1>Contact Form</h1></legend>
+        <legend><h1>Thank you for your submission!</h1></legend>
+        <% if (submissions.length > 0) { 
+       const submission = submissions[submissions.length - 1]; %>
+        <div class="confirmation-styling">
+            <h3>First Name:</h3>
+            <h4><%= submission.fname %></h4>
+
+            <h3>Last Name:</h3>
+            <h4><%= submission.lname %></h4>
+
+            <h3>Job Title:</h3>
+            <h4><%= submission.jobT %></h4>
+
+            <h3>Company:</h3>
+            <h4><%= submission.company %></h4>
+
+            <h3>Linkedin URL:</h3>
+            <h4><%= submission.linkedin %></h4>
+
+            <h3>Email Address:</h3>
+            <h4><%= submission.email %></h4>
+
+            <h3>How We Met:</h3>
+            <h4><%= submission.met %></h4>
+
+            <h3>Message:</h3>
+            <h4><%= submission.message %></h4>
+
+            <h3>Added to Mailing List?:</h3>
+            <h4><%= submission.added || 'No' %></h4>
+
+            <h3>Email Format Choice:</h3>
+            <h4><%= submission.choiceFormat %></h4>
+
+            <h3>Submission Time:</h3>
+            <h4><%= submission.submissionTime %></h4>
+        </div>
+    <% } else { %>
+        <h4>No submissions yet.</h4>
+    <% } %>
+
+
         <h1 id="back-home"><a href="/">Back to home page?</a></h1>
     </form>
 </body>
