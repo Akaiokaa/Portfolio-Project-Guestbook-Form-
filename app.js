@@ -15,6 +15,9 @@ app.get('/', (req, res) => {
     // res.sendFile(`${import.meta.dirname}/views/home.html`);
     res.render('home');
 });
+app.get('/guest', (req, res) => {
+    res.render('guest');
+});
 
 app.get('/admin', (req, res) =>{
     res.render('admin', {submissions});

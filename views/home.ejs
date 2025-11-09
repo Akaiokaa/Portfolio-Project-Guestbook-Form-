@@ -3,108 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guestbook Form</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="images/favicon.png">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <form id="guest-form" action="submit-form" method="POST">
-        <legend><h1>Contact Form</h1></legend>
-        <div class="first-section-container">
-            <div>
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="fname">
-                <span id="err-fname" class="error">First name cannot be empty!</span>
-            </div>
-            
-            
-            <div>
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lname">
-                <span id="err-lname" class="error">Lirst name cannot be empty!</span>
-            </div>
-            
-            <div>
-                <label for="jobT">Job Title</label>
-                <input type="text" id="jobT" name ="jobT">
-            </div>
+    <header>
+        <section>
+            <div class="marginBothsides">
+                <div class="sectionSpacing">
+                    <h2 id="fullName">Brendan Villaraza</h2>
+                    <div class="links">
+                        <p>brendanvillaraza@yahoo.com</p>
+                        
+                        <a href="https://www.linkedin.com/in/brendan-villaraza-b368b12b0/">Linkedin.com/in/Brendan-Villaraza</a>
+                    </div>
+                    <div class="links">
+                        <p>(206) 484-9639</p>
 
-            
-            <div>
-                <label for="Company">Company</label>
-                <input type="text" id="Company" name ="company">
-            </div>
-            
+                        <a href="https://github.com/Akaiokaa">github.com/Akaiokaa</a>
+                    </div>
+                    <img id="selfPortrait" src="images/APhotoOfMe.png" alt="A picture of Brendan Villaraza">
+                </div>
 
-            <div>
-                <label for="linkedin">Linkedin URL</label>
-                <input type="text" id="linkedin" name ="linkedin">
-                <span id="err-linkedin" class="error">linkedin must contain https://linkedin.com/in/</span>
-            </div>
+                <div class="sectionSpacing">
+                    <h2>Summary</h2>
+                    <p>Kent-based Software Development (Computer Science) student passionate about Java, seeking a summer internship in backend or full-stack development.</p>
+                </div>
+                <hr>
+               
+                <div class="sectionSpacing">
+                <h2>Education</h2>
+                <div class="links">
+                    <h4>Bachelor of Applied Science, Software Development</h4>
+                    <h4>2025 - 2027</h4>
+                </div>
+                <p>		
+                Green River College, Auburn, WA
+                </div>
             
-            <div>
-                <label for="email">Email Address</label>
-                <input type="text" id="email" name ="email">
-                <span id="err-email" class="error">Email must include an '@' and a '.'</span>
-                <span id="err-email2" class="error">Must include email</span>
-            </div>
-            
-        </div>
-        <div class="second-section">
-            <div class="spacing-middle">
                 <div>
-                    <label for="met">How did we meet?</label>
+                    <div class="links">
+                        <h4>Associate of Applied Science-T, Data Analytics and Software Development</h4>
+
+                        <h4>2023 - 2025</h4>
+                    </div>
+                    <h4>	
+                    Green River College, Auburn, WA
+                    </h4>
+                    <p>Computer Science, Software Engineering, Programming, Web & Mobile Development, Databases, Agile, Algorithms, Full Stack Development Hands-on curriculum focused on building secure, efficient, and scalable software solutions using industry practices.</p>
                     <br>
-                    <select name="met" id="met">
-                        <option value="select"> Please select</option>
-                        <option value="high-school">high-school</option>
-                        <option value="work">work</option>
-                        <option value="online">online</option>
-                        <option value="other">other</option>
-                    </select>
-                    <span id="err-met" class="error">How we met is required</span>
-            
-                    
                 </div>
-                
-                <div id="second-section-right">
-                    <label for="other" id="other">Other (please specify)</label>
-                    <input type="text" id="other">
-                </div>
-                
+           
+                <hr>
             </div>
-            <div class ="middle">
-                <label for="Message">Message</label>
-                <textarea name="message" id="message"></textarea>
+        </section>
+    </header>
+    <main>
+        <div class="marginBothsides">
             
+            <div class="sectionSpacing">
+                <h2>Skills and Certifications</h2>
+                <ul>
+                    <li>Languages: Java, PHP, SQL, JavaScript, Python</li>
+                    <li>Web: HTML/CSS, JavaScript</li>
+                    <li>Agile: pair programming, working in sprints</li>
+                </ul>
+            </div>
+            
+            <div class="sectionSpacing">
+                <h2>Experience </h2>
+                <div class="links">
+                    <h4>StatMando Website Software Project</h4>
+
+                    <h4>2025</h4>
+                </div>
+                <ul>
+                    <li>Developed a web tool to help Tournament Directors reserve parks quickly and easily.</li>
+                    <li>Created a tool to streamline park reservations for future PDGA staff and Tournament Directors.</li>
+                    <li>Contributed to front-end and back-end development using HTML, CSS, PHP, and JavaScript, collaborating with the team via Agile.</li>
+                </ul>
+            </div>
+            
+            <div class="sectionSpacing">
+                
+                <div class="links">
+                    <h4>Data Visualization of Sleep Trends by Demographics</h4>
+                    <h4>2024</h4>
+                </div>
+                <ul>
+                    <li>Cleaned, prepared, and analyzed time series and JSON data using Python and Pandas.</li>
+                    <li>Developed predictive models with Python, applying ethical considerations to extract actionable insights.</li>
+                    <li>Created clear visualizations with Seaborn and Pandas to communicate insights effectively.</li>
+                </ul>
             </div>
 
-            <div class="listing">
-                <label for="add">
-                    <input type="checkbox" name="added" id="added">
-                </label>
-                <p><b>Please add me to your mailing list</b></p>
-            </div>
+            <div class="sectionSpacing">
+                <div class="links">
+                    <h4>Web Development Project — Tic Tac Toe Game</h4>
 
-            <div id="bottom">
-                <p><b>Choose and email format:</b></p>
-                <label for="choice">
-                    <input type="radio" name="choiceFormat" value="html">
-                    Html
-                </label>
-                <label for="choice">
-                    <input type="radio" name="choiceFormat"value="text">
-                    Text
-                </label>
+                    <h4> 2023</h4>
+                </div>
+                <ul>
+                    <li>Developed game logic and UI using JavaScript, HTML, and CSS to demonstrate front-end proficiency.</li>
+                    <li>Designed a responsive layout with real-time win, loss, and draw tracking to enhance user interaction.</li>
+                    <li>Achieved 100% functionality on desktop using Anime.js to create a clean layout.</li>
+                </ul>
             </div>
-            <div class="block">
-             <button>Submit</button>
+            <div class="sectionSpacing">
+                <div class="links">
+                    <h4>SDEV Data Analytics Final Project — EDA: Video Game Sales</h4>
+
+                    <h4>2024</h4>
+                </div>
+                <ul>
+                    <li>Analyzed the EDA - Video Game Sales dataset to explore sales trends and performance metrics across regions and platforms.</li>
+                    <li>Utilized SQL for data extraction and cleaning, and Tableau for interactive visualizations answering five key analytical questions.</li>
+                    <li>Delivered a clear, insight-driven PowerPoint presentation showcasing data storytelling and actionable findings in the gaming industry.</li>
+                </ul>
             </div>
-    
         </div>
-     
-       
-    </form>
-    <script src="js/guest.js"></script>
+    </main>
+    
 </body>
 </html>
