@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/admin', (req, res) =>{
-    res.send(submissions);
+    res.render('admin', {submissions});
 });
 
 app.post('/submit-form', (req, res) => {

@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Page</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/favicon.png">
 </head>
 <body>
-    
+    <form id="guest-form" action="submit-form" method="POST">
+    <legend><h1>Admin</h1></legend>
+    <div class="container">
+    <% submissions.forEach(submission => { %>
+        <h4><%= submission.fname %> <%= submission.lname %></h4>
+        <h4><%= submission.met %></h4>
+        <h4><%= submission.message %></h4>
+        <h4><%= submission.added %></h4>
+        <h4><%= submission.choiceFormat %></h4>
+        <h4><%= submission.submissionTime %></h4>
+
+        <% }); %>
+    </div>
+    </form>
+  
 </body>
 </html>

@@ -139,3 +139,7 @@ button{
     color: red;
     display: none;
 }
+/*admin styling */
+.container {
+    margin: 0 10%;
+}
