@@ -28,7 +28,7 @@
 
                 <div class="submission-field">
                     <h3>Job Title:</h3>
-                    <h4 class="info-highlighted"><%= submission.jobT %></h4>
+                    <h4 class="info-highlighted"><%= submission.job_title %></h4>
                 </div>
 
                 <div class="submission-field">
@@ -58,17 +58,17 @@
 
                 <div class="submission-field">
                     <h3>Added to Mailing List?:</h3>
-                    <h4 class="info-highlighted"><%= submission.added || 'No' %></h4>
+                    <h4 class="info-highlighted"><%= submission.added_to_list == 1 ? 'Yes' : 'No' %></h4>
                 </div>
 
                 <div class="submission-field">
                     <h3>Email Format Choice:</h3>
-                    <h4 class="info-highlighted"><%= submission.choiceFormat %></h4>
+                    <h4 class="info-highlighted"><%= submission.email_format %></h4>
                 </div>
 
                 <div class="submission-field">
                     <h3>Submission Time:</h3>
-                    <h4 class="info-highlighted"><%= submission.submissionTime %></h4>
+                    <h4 class="info-highlighted"><%= submission.created_at %></h4>
                 </div>
             </div>
             <br>

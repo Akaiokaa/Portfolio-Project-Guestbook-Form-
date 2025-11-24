@@ -40,8 +40,31 @@ app.get('/contact', (req, res) => {
     res.render('contact');
 });
 
-app.get('/admin', (req, res) =>{
-    res.render('admin', {submissions});
+app.get('/admin', async (req, res) =>{
+    try {
+        const [submissions] = await pool.query('SELECT * FROM contacts ORDER BY created_at DESC');
+        submissions.forEach(order => {
+
+        order.formattedTimestamp = new 
+
+		Date(order.timestamp).toLocaleString('en-US', { 
+                year: 'numeric', 
+                month: 'short', 
+                day: 'numeric', 
+                hour: 'numeric', 
+                minute: '2-digit',
+                hour12: true 
+            });
+        });
+
+        res.render('admin', { submissions: submissions });
+
+    } catch(err) {
+
+        console.error('Database error:', err);
+
+        res.status(500).send('Database error: ' + err.message);
+    }
 });
 
 app.post('/submit-form', async(req, res) => {
@@ -71,7 +94,7 @@ app.post('/submit-form', async(req, res) => {
             submission.other || null,
             submission.message || null,
             addedToList,
-            emailFormat,
+            emailFormat
         ];
 
         
